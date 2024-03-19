@@ -1,0 +1,74 @@
+Arguments: 
+  /usr/bin/node /home/maximilien/.yarn/bin/yarn.js
+
+PATH: 
+  /home/maximilien/.yarn/bin:/home/maximilien/.config/yarn/global/node_modules/.bin:/home/maximilien/.bun/bin:/home/maximilien/.local/bin:/home/maximilien/bin:/home/maximilien/.yarn/bin:/home/maximilien/.config/yarn/global/node_modules/.bin:/home/maximilien/.bun/bin:/home/maximilien/.rover/bin:/home/maximilien/.cargo/bin:/home/maximilien/.local/bin:/home/maximilien/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/maximilien/.local/share/coursier/bin:/home/maximilien/Android/Sdk/emulator:/home/maximilien/Android/Sdk/platform-tools:/usr/local/go/bin:/home/maximilien/go/bin:/home/maximilien/.pub-cache/bin:/home/maximilien/.local/share/coursier/bin:/home/maximilien/Android/Sdk/emulator:/home/maximilien/Android/Sdk/platform-tools:/usr/local/go/bin:/home/maximilien/go/bin:/home/maximilien/.pub-cache/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.17.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  TypeError [ERR_INVALID_URL]: Invalid URL
+      at new NodeError (node:internal/errors:405:5)
+      at Url.parse (node:url:445:17)
+      at urlParse (node:url:167:13)
+      at Function.isVersion (/home/maximilien/.yarn/lib/cli.js:37204:21)
+      at getExoticResolver (/home/maximilien/.yarn/lib/cli.js:29718:18)
+      at PackageRequest.<anonymous> (/home/maximilien/.yarn/lib/cli.js:36566:76)
+      at Generator.next (<anonymous>)
+      at step (/home/maximilien/.yarn/lib/cli.js:310:30)
+      at /home/maximilien/.yarn/lib/cli.js:321:13
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+npm manifest: 
+  {
+    "name": "www",
+    "private": true,
+    "sideEffects": false,
+    "type": "module",
+    "scripts": {
+      "build": "remix vite:build",
+      "dev": "remix vite:dev",
+      "start": "remix-serve ./build/server/index.js",
+      "typecheck": "tsc"
+    },
+    "dependencies": {
+      "@remix-run/node": "^2.8.1",
+      "@remix-run/react": "^2.8.1",
+      "@remix-run/serve": "^2.8.1",
+      "isbot": "^4.1.0",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+      "@remix-run/dev": "^2.8.1",
+      "@types/react": "^18.2.20",
+      "@types/react-dom": "^18.2.7",
+      "@typescript-eslint/eslint-plugin": "^6.7.4",
+      "@typescript-eslint/parser": "^6.7.4",
+      "eslint": "^8.38.0",
+      "eslint-import-resolver-typescript": "^3.6.1",
+      "eslint-plugin-import": "^2.28.1",
+      "eslint-plugin-jsx-a11y": "^6.7.1",
+      "eslint-plugin-react": "^7.33.2",
+      "eslint-plugin-react-hooks": "^4.6.0",
+      "typescript": "^5.1.6",
+      "vite": "^5.1.0",
+      "vite-tsconfig-paths": "^4.2.1"
+    },
+    "engines": {
+      "node": ">=18.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
